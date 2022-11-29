@@ -1,0 +1,146 @@
+* {
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.sec1-capa {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.sec1-img-wrapper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.sec1-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+}
+
+.img-wrapper-capa {
+    width: 20%;
+}
+
+.img-wrapper-capa img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cover {
+    position: absolute;
+    width: 100%;
+    top: 15%;
+}
+
+.info-list {
+    font-size: min(20px,  2.5vw);
+}
+
+.bt-header {
+    border: none;
+    background: none;
+    transition: all 0.4s;
+}
+
+.bt-header:hover {
+    border: 5px solid white;
+}
+
+.bt-header a {
+    text-decoration: none;
+}
+
+.section-habilidades {
+    background-color: #202022;
+}
+
+.section-habilidades div h1 {
+    color: #CACACA;
+}
+
+.card {
+    position: relative;
+    cursor: pointer;
+}
+
+.card div h3 {
+    font-size: 3vh;
+}
+
+.card img{
+    opacity: 0.9;
+    transition: opacity .3s;
+}
+
+.card-cont:hover .card img {
+    opacity: .6;
+}
+
+.card-body {
+    position: absolute;
+}
+
+.card-body p {
+    position: relative;
+    bottom: 0rem;
+    padding-top: 2.5rem;
+    text-shadow: 0.3 0.2rem 0.3rem rgba(0, 0, 0, .6);
+    opacity: 0;
+    font-size: 1rem;
+    font-weight: 500;
+    visibility: hidden;
+    transition: all .3s;
+}
+
+.card:hover .card-body p {
+    bottom: 2rem;
+    opacity: 1;
+    visibility: visible;
+}
+
+.experience-content {
+    background-color: #878787;
+    box-shadow: 3px 3px 3px black;
+}
+
+.field {
+    border: none; 
+    border-bottom: 2px solid black;
+}
+
+.section-contato {
+   background-color: #202022;
+}
+
+@media(max-width: 1024px) {
+    .card-title-wrapper {
+        font-weight: 600;
+        font-size:  1.2rem;
+    }
+
+    .card-body p {
+        font-size: 0.8rem;
+        font-weight: 500;
+    }
+}
+
+@media(max-width: 320px) {
+    .card-body p {
+        font-size: 0.7rem;
+    }
+}
+
+
+
+
